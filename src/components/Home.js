@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { digitsEnToFa } from "@persian-tools/persian-tools";
 
 import { FaInstagram, FaBehance, FaFacebook } from "react-icons/fa";
 
@@ -15,14 +16,14 @@ const Home = () => {
             <FaInstagram />
           </div>
           <p className="text">تعداد درخواست ها:</p>
-          <h1>5</h1>
+          <h1>{digitsEnToFa(5)}</h1>
         </div>
         <div className="secondbox">
           <div className="icon">
             <FaBehance />
           </div>
           <p className="text">تعداد بازدیدهای امروز:</p>
-          <h1>512</h1>
+          <h1>{digitsEnToFa(512)}</h1>
         </div>
         <div className="thirdbox">
           <div className="icon">
