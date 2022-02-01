@@ -7,8 +7,9 @@ const Navbar = () => {
       <div className="Container">
         <h1>منوی پنل شماره 1</h1>
         <p>امروز پنج شنبه 25 دی ماه سال 1400 ساعت 11:10 </p>
-        <div className="exit">exit</div>
+        <div className="exit">خروج از پنل</div>
       </div>
+      <div className="underline"></div>
     </Wrapper>
   );
 };
@@ -19,6 +20,7 @@ const Wrapper = styled.div`
     position: absolute;
     top: 0;
     right: 0;
+    border: 1px solid red;
 
     height: 5rem;
     width: 100%;
@@ -59,11 +61,34 @@ const Wrapper = styled.div`
   }
   .exit {
     margin-left: 4rem;
-
+    padding: 0.3rem;
     margin-right: 1.5rem;
     width: 8rem;
-    height: 2rem;
+    height: 2.5rem;
     background: #e5e5e5;
     border-radius: 10px;
+
+    font-family: "Vazir", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 29px;
+    /* identical to box height */
+
+    text-align: center;
+
+    /* Gray I */
+
+    color: #797877;
+  }
+  .underline {
+    position: absolute;
+    top: 6rem;
+    right: 3.7rem;
+    width: 88%;
+    height: 2px;
+    border: 1px solid #e5e5e5;
+    margin-right: auto;
+    margin-left: auto;
   }
 `;
